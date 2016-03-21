@@ -35,6 +35,35 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String: AnyObject]) {
+        
+        var newImage: UIImage
+        
+        if let possibleImage = info["UIImagePickerControllerEditedImage"] as? UIImage {
+            newImage = possibleImage
+        } else if let possibleImage = info["UIImagePickerControllerOriginalImage"] as? UIImage {
+            newImage = possibleImage
+        } else {
+            return
+        }
+        
+        let imageName = NSUUID().UUIDString
+        let imagePath = getDocumentsDirectory().stringByAppendingPathComponent(imageName)
+        
+        if let jpegData = UIImageJPEGRepresentation(newImage, 80) {
+            jpegData.writeToFile(imagePath, atomically: true)
+        }
+        
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func getDocumentsDirectory() -> NSString {
+        
+        let paths = NSSearchPathForDirectoriesInDomains(.DocumentationDirectory, .UserDomainMask, true)
+        let documentsDirectory = paths[0]
+        return documentsDirectory
+    }
 
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         

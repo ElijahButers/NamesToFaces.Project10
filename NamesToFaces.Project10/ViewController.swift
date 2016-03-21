@@ -30,6 +30,11 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         picker.delegate = self
         presentViewController(picker, animated: true, completion: nil)
     }
+    
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         

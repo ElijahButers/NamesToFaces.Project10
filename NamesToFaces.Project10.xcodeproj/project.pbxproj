@@ -58,11 +58,11 @@
 			children = (
 				E20A8C561C9ED17900B23DDE /* AppDelegate.swift */,
 				E20A8C581C9ED17900B23DDE /* ViewController.swift */,
+				E2118ED61CA03EA2008B2D54 /* PersonCell.swift */,
 				E20A8C5A1C9ED17900B23DDE /* Main.storyboard */,
 				E20A8C5D1C9ED17900B23DDE /* Assets.xcassets */,
 				E20A8C5F1C9ED17900B23DDE /* LaunchScreen.storyboard */,
 				E20A8C621C9ED17900B23DDE /* Info.plist */,
-				E2118ED61CA03EA2008B2D54 /* PersonCell.swift */,
 			);
 			path = NamesToFaces.Project10;
 			sourceTree = "<group>";
@@ -257,6 +257,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Macintosh.NamesToFaces-Project10";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -268,6 +269,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Macintosh.NamesToFaces-Project10";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

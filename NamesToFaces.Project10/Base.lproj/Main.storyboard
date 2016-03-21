@@ -41,6 +41,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="wO8-qn-4Vd"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Gqc-u4-dGC" id="PGM-hP-HdJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -22,6 +22,14 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func addNewPerson() {
+        
+        let picker = UIImagePickerController()
+        picker.allowsEditing = true
+        picker.delegate = self
+        presentViewController(picker, animated: true, completion: nil)
+    }
 
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         

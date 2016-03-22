@@ -74,7 +74,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
 
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return 10
+        return people.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {

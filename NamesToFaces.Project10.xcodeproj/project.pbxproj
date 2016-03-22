@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E204C6D81CA14C59007CC914 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E204C6D71CA14C59007CC914 /* Person.swift */; };
 		E20A8C571C9ED17900B23DDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A8C561C9ED17900B23DDE /* AppDelegate.swift */; };
 		E20A8C591C9ED17900B23DDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A8C581C9ED17900B23DDE /* ViewController.swift */; };
 		E20A8C5C1C9ED17900B23DDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20A8C5A1C9ED17900B23DDE /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E204C6D71CA14C59007CC914 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		E20A8C531C9ED17900B23DDE /* NamesToFaces.Project10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NamesToFaces.Project10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E20A8C561C9ED17900B23DDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E20A8C581C9ED17900B23DDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				E20A8C561C9ED17900B23DDE /* AppDelegate.swift */,
 				E20A8C581C9ED17900B23DDE /* ViewController.swift */,
 				E2118ED61CA03EA2008B2D54 /* PersonCell.swift */,
+				E204C6D71CA14C59007CC914 /* Person.swift */,
 				E20A8C5A1C9ED17900B23DDE /* Main.storyboard */,
 				E20A8C5D1C9ED17900B23DDE /* Assets.xcassets */,
 				E20A8C5F1C9ED17900B23DDE /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				E2118ED71CA03EA2008B2D54 /* PersonCell.swift in Sources */,
 				E20A8C591C9ED17900B23DDE /* ViewController.swift in Sources */,
+				E204C6D81CA14C59007CC914 /* Person.swift in Sources */,
 				E20A8C571C9ED17900B23DDE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

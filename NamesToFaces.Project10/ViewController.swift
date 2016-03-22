@@ -81,6 +81,17 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Person", forIndexPath: indexPath) as! PersonCell
         
+        let person = people[indexPath.item]
+        cell.name.text = person.name
+        
+        let path = getDocumentsDirectory().stringByAppendingPathComponent(person.image)
+        cell.imageView.image = UIImage(contentsOfFile: path)
+        
+        cell.imageView.layer.borderColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3).CGColor
+        cell.imageView.layer.borderWidth = 2
+        cell.imageView.layer.cornerRadius = 3
+        cell.layer.cornerRadius = 7
+        
         return cell
 
     }

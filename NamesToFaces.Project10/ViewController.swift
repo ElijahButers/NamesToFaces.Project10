@@ -58,6 +58,10 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             jpegData.writeToFile(imagePath, atomically: true)
         }
         
+        let person = Person(name: "Unknown", image: imageName)
+        people.append(person)
+        collectionView.reloadData()
+        
         dismissViewControllerAnimated(true, completion: nil)
     }
     
